@@ -6,8 +6,8 @@ tags
 *.swp
 
 # Object files
-*.o
-*.s
+#*.o
+#*.s
 
 # Libraries
 *.lib
