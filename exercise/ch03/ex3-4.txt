@@ -1,0 +1,11 @@
+
+2、(char,int)  
+#movb (%rdi),%al
+movsbl (%rdi),%eax #先将char转换成int
+movl %eax,(%rsi)
+
+3、(char,unsigned)
+
+7、(char,short)
+movsbw(%rdi),%ax  # 读一个字节并符号扩展一个字
+movw %ax,(%rsi)   # 存2个字节
