@@ -1,0 +1,21 @@
+#对每一行分别写成一个.s文件，as汇编看报什么错误。
+#但是有些错误在编译时不会报错，可能要到运行时才报错。
+1、书中给的答案是cannot use %ebx as address register,because is 32 bit.
+
+2、ex3-3-2.s:1: Error: incorrect register `%rax' used with `l' suffix
+应该用movq
+
+3、ex3-3-3.s:1: Error: too many memory references for `mov'
+from the book: Cannot have both source and destination be memory references.
+
+4、ex3-3-4.s:1: Error: bad register name `%sl'
+
+5、Error: operand type mismatch for `movq'
+form the book: Cannot have immediate as destination
+
+6、ex3-3-6.s:1: Error: unsupported instruction `mov'
+from the book: Destination operand incorrect size
+
+
+7、ex3-3-7.s:1: Error: `%si' not allowed with `movb'
+from the book: Mismatch between instruction and register ID
